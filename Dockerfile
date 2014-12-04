@@ -5,11 +5,14 @@ MAINTAINER StudioEtrange <nomorgan@gmail.com>
 ENV COUCHPOTATO_VERSION 2.6.1
 
 WORKDIR /opt/couchpotato
-RUN curl -k -SL "https://github.com/RuudBurger/CouchPotatoServer/archive/build/$SABNZBD_VERSION.tar.gz" \
+RUN curl -k -SL "https://github.com/RuudBurger/CouchPotatoServer/archive/build/$COUCHPOTATO_VERSION.tar.gz" \
 	| tar -xzf - -C /opt/couchpotato --strip-components=1
 
 # SUPERVISOR -------------
 COPY supervisord-couchpotato.conf /etc/supervisor/conf.d/supervisord-couchpotato.conf
+
+# DOCKER -------------
+VOLUME /data
 
 # Supervisord web interface -------
 EXPOSE 9999
