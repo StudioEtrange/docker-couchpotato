@@ -9,17 +9,21 @@
 
 ## Sample Usage
 
-for running couchpotato version 2.6.1 :
+for running latest couchpotato version :
 
-	docker run -d -v $(pwd):/data -p 5050:5050 studioetrange/docker-couchpotato:2.6.1
+	docker run -d -v $(pwd):/data -p 5050:5050 studioetrange/docker-couchpotato:latest
 
 then go to http://localhost:5050
 
 ## Version and Tag
 
-* Each tag is a different version of couchpotato
-* latest is the latest stable sabznbd couchpotato available through this repository
-* dev is the development version from couchpotato git repository. But you should build the image yourself OR use /opt/couchpotato-update.sh to have an uptodate image.
+* docker-tag:latest or github-branch:master -> latest stable sabznbd couchpotato version available through this repository
+* docker-tag:X.X.X or github-branch:X.X.X -> couchpotato version X.X.X
+* docker-tag:dev or github-branch:dev -> development version from couchpotato git repository
+** In this case, to have an uptodate image, you should
+*** build the docker image yourself (see build from github souce below)
+*** OR launch in the container the script /opt/couchpotato-update.sh
+
 
 ## Instruction 
 
@@ -50,8 +54,8 @@ then go to http://localhost:5050
 
 ### Sabnzbd
 
-	Go to http://localhost:COUCHPOTATO_HTTP_PORT/
+	http://localhost:COUCHPOTATO_HTTP_PORT/
 	
 ### Supervisor
 
-	Go to http://localhost:SUPERVISOR_HTTP_WEB/
+	http://localhost:SUPERVISOR_HTTP_WEB/
