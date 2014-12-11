@@ -17,9 +17,9 @@ then go to http://localhost:5050
 
 ## Version and Tag
 
-* docker-tag:latest or github-branch:master -> latest stable sabznbd couchpotato version available through this repository
-* docker-tag:X.X.X or github-branch:X.X.X -> couchpotato version X.X.X
-* docker-tag:dev or github-branch:dev -> development version from couchpotato git repository
+* docker-tag:latest or github-branch:master --> latest stable sabznbd couchpotato version available through this repository
+* docker-tag:X.X.X or github-branch:X.X.X --> couchpotato version X.X.X
+* docker-tag:dev or github-branch:dev --> development version from couchpotato git repository
 ** In this case, to have an uptodate image, you should
 *** build the docker image yourself (see build from github souce below)
 *** OR launch in the container the script /opt/couchpotato-update.sh
