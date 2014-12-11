@@ -17,7 +17,7 @@ then go to http://localhost:5050
 
 ## Version and Tag
 
-* docker-tag:latest or github-branch:master ==> latest stable sabznbd couchpotato version available through this repository
+* docker-tag:latest or github-branch:master ==> latest stable couchpotato version available through this repository
 * docker-tag:X.X.X or github-branch:X.X.X ==> couchpotato version X.X.X
 * docker-tag:dev or github-branch:dev ==> development version from couchpotato git repository
 
