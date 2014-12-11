@@ -18,7 +18,7 @@ then go to http://localhost:5050
 ## Version and Tag
 
 * docker-tag:latest ==> latest stable couchpotato version available through this repository
-* github-branch:master ==> latest stable couchpotato version available through this repository
+* github-branch:master ==> work in progress based on latest stable couchpotato version available through this repository
 * docker-tag:X.X.X connected to github-branch:X.X.X ==> couchpotato version X.X.X
 * docker-tag:dev connected to github-branch:dev ==> development version from couchpotato git repository
 
