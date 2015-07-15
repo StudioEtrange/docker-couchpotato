@@ -4,7 +4,7 @@
 * Based on couchpotato github source code
 * Choice of couchpotato version
 * Use supervisor to manage couchpotato process
-* By default couchpotato configuration files will be in /data/couchpotato
+* By default couchpotato configuration files will be in /data/couchpotato _(You should map a docker volume to /data)_
 
 
 ## Sample Usage
@@ -15,21 +15,19 @@ for running latest couchpotato version :
 
 then go to http://localhost:5050
 
-## Version and Tag
+It will pull lastest version from docker hub registry.
 
-* docker-tag:latest ==> latest stable couchpotato version available through this repository
-* github-branch:master ==> work in progress based on latest stable couchpotato version available through this repository
-* docker-tag:X.X.X connected to github-branch:X.X.X ==> couchpotato version X.X.X
-* docker-tag:dev connected to github-branch:dev ==> development version from couchpotato git repository
+## Docker tags
 
-In dev case, to have an uptodate image you should
-* build the docker image yourself (see build from github souce below)
-* OR launch in the container the script /opt/couchpotato-update.sh
+Available tag for studioetrange/docker-sickrage:*TAG*
 
+	latest, 2.6.3, 2.6.2, 2.6.1, 2.6.0, 2.5.2, 2.5.1, 2.4.0, 2.3.1, 2.2.1, 2.2.0, 2.1.0, 2.0.8.1, 2.0.8
+
+Current latest tag is version *2.6.3*
 
 ## Instruction 
 
-### build from github source
+### build from github repository
 
 	git pull https://github.com/StudioEtrange/docker-couchpotato
 	cd docker-couchpotato
@@ -47,17 +45,25 @@ In dev case, to have an uptodate image you should
 
 	docker run -d -v DATA_DIR:/data -p COUCHPOTATO_HTTP_PORT:8080 -p SUPERVISOR_HTTP_WEB:9999 studioetrange/docker-couchpotato:COUCHPOTATO_VERSION
 
-
 ### run a shell inside this container (without couchpotato running)
 
-	docker run -i -t studioetrange/docker-couchpotato
+	docker run -i -t studioetrange/docker-couchpotato bash
 
-## Access point
+## Access points
 
-### Sabnzbd
+### sabnzbd
 
 	http://localhost:COUCHPOTATO_HTTP_PORT/
 	
-### Supervisor
+### supervisor
 
 	http://localhost:SUPERVISOR_HTTP_WEB/
+
+
+## Notes on Github / Docker Hub Repository
+
+* This github repository is linked to an automated build in docker hub registry.
+
+	https://registry.hub.docker.com/u/studioetrange/docker-couchpotato/
+
+* _update.sh_ is only an admin script which update and add new versions. This script do not auto create missing tag in docker hub webui. It is only for admin/owner purpose.

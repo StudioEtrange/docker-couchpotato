@@ -2,10 +2,10 @@ FROM studioetrange/docker-debian:wheezy
 MAINTAINER StudioEtrange <nomorgan@gmail.com>
 
 # COUCHPOTATO install -------------
-ENV COUCHPOTATO_VERSION 2.6.1
+ENV COUCHPOTATO_VERSION build/2.6.3
 
 WORKDIR /opt/couchpotato
-RUN curl -k -SL "https://github.com/RuudBurger/CouchPotatoServer/archive/build/$COUCHPOTATO_VERSION.tar.gz" \
+RUN curl -k -SL "https://github.com/RuudBurger/CouchPotatoServer/archive/$COUCHPOTATO_VERSION.tar.gz" \
 	| tar -xzf - -C /opt/couchpotato --strip-components=1
 
 # SUPERVISOR -------------
