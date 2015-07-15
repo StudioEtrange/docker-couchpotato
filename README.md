@@ -19,11 +19,11 @@ It will pull lastest version from docker hub registry.
 
 ## Docker tags
 
-Available tag for studioetrange/docker-sickrage:*TAG*
+Available tag for studioetrange/docker-couchpotato:__TAG__
 
 	latest, 2.6.3, 2.6.2, 2.6.1, 2.6.0, 2.5.2, 2.5.1, 2.4.0, 2.3.1, 2.2.1, 2.2.0, 2.1.0, 2.0.8.1, 2.0.8
 
-Current latest tag is version *2.6.3*
+Current latest tag is version __2.6.3__
 
 ## Instruction 
 
@@ -43,7 +43,7 @@ Current latest tag is version *2.6.3*
 
 ### run couchpotato daemonized
 
-	docker run -d -v DATA_DIR:/data -p COUCHPOTATO_HTTP_PORT:8080 -p SUPERVISOR_HTTP_WEB:9999 studioetrange/docker-couchpotato:COUCHPOTATO_VERSION
+	docker run -d -v DATA_DIR:/data -p COUCHPOTATO_HTTP_PORT:5050 -p SUPERVISOR_HTTP_WEB:9999 studioetrange/docker-couchpotato:COUCHPOTATO_VERSION
 
 ### run a shell inside this container (without couchpotato running)
 
