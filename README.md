@@ -21,9 +21,9 @@ It will pull lastest version from docker hub registry.
 
 Available tag for studioetrange/docker-couchpotato:__TAG__
 
-	latest, 2.6.3, 2.6.2, 2.6.1, 2.6.0, 2.5.2, 2.5.1, 2.4.0, 2.3.1, 2.2.1, 2.2.0, 2.1.0, 2.0.8.1, 2.0.8
+	latest, 3.0.1, 3.0.0, 2.6.3, 2.6.2, 2.6.1, 2.6.0, 2.5.2, 2.5.1, 2.4.0, 2.3.1, 2.2.1, 2.2.0, 2.1.0, 2.0.8.1, 2.0.8
 
-Current latest tag is version __2.6.3__
+Current latest tag is version __3.0.1__
 
 ## Instruction 
 
