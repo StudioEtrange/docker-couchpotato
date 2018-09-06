@@ -11,7 +11,7 @@ FILTER_VERSION_NAME="build/"
 
 VERSION_SEPARATOR="."
 # revert version ordering for letter behind number (ex: with 'ON' value, 1.2 is newer than 1.2rc1)
-VERSION_INVERSE_LAST_CHAR=ON
+VERSION_INVERSE_LAST_CHAR=OFF
 
 # Use github tags instead of github releases
 USE_TAG_AS_RELEASE=0
