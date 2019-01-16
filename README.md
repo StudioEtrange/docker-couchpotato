@@ -1,3 +1,5 @@
+# NOT maintained : use https://github.com/StudioEtrange/docker-radarr instead
+
 # docker couchpotato by StudioEtrange
 
 * Run couchpotato inside a docker container built upon debian
